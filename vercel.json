@@ -1,1 +1,1 @@
-{"framework":"nextjs","installCommand":"npm install --force --include=dev --no-audit --no-fund","buildCommand":"npm run build"}
+{"framework":"nextjs","installCommand":"npm install --force --include=dev --no-audit --no-fund","buildCommand":"npm install typescript@5.8.3 @types/react@19.1.2 @types/react-dom@19.1.2 @types/node@22.15.21 @types/archiver@6.0.2 --no-save --force --no-audit --no-fund && npm run build"}
