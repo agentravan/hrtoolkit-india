@@ -1,1 +1,1 @@
-{"framework":"nextjs"}
+{"framework":"nextjs","installCommand":"npm install --force --include=dev --no-audit --no-fund","buildCommand":"npm run build"}
