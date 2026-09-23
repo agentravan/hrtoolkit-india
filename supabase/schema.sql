@@ -1,4 +1,7 @@
--- Canonical schema for HRToolkit India.
--- Apply the migration with the Supabase CLI:
---   supabase db push
--- Or run supabase/migrations/001_initial.sql in the SQL editor.
+-- Canonical schema entrypoint for HRToolkit India.
+-- Preferred deployment path:
+--   1) supabase db push
+-- This applies every migration under supabase/migrations/ in order.
+-- If using the SQL editor manually, run:
+--   1) supabase/migrations/001_initial.sql
+--   2) supabase/migrations/002_phase1_hardening.sql
