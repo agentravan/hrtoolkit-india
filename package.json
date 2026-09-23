@@ -15,13 +15,13 @@
     "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
     "archiver": "7.0.1",
-    "next": "15.5.7",
+    "next": "15.5.9",
     "nodemailer": "7.0.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "xlsx": "0.18.5",
     "typescript": "5.8.3",
-    "@types/archiver": "6.0.2"
+    "@types/archiver": "8.0.0"
   },
   "devDependencies": {}
 }
