@@ -1,0 +1,4 @@
+import nodemailer from "nodemailer";
+const host=process.env.ZOHO_SMTP_HOST||"smtp.zoho.in",port=Number(process.env.ZOHO_SMTP_PORT||587),secure=process.env.ZOHO_SMTP_SECURE==="true";
+export function mailer(){if(!process.env.ZOHO_SMTP_USER||!process.env.ZOHO_SMTP_PASS)throw new Error("Zoho SMTP credentials are not configured");return nodemailer.createTransport({host,port,secure,requireTLS:!secure,auth:{user:process.env.ZOHO_SMTP_USER,pass:process.env.ZOHO_SMTP_PASS}})}
+export async function sendMail(opts:any){return mailer().sendMail({from:process.env.MAIL_FROM||process.env.ZOHO_SMTP_USER,to:opts.to,subject:opts.subject,text:opts.text,html:opts.html,attachments:opts.attachments})}
