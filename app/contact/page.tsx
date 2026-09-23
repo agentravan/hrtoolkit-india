@@ -1,0 +1,1 @@
+export default function Contact(){return <main className="legal"><h1>Contact</h1><p>For order, product or implementation questions, email <a href="mailto:teamwork.hrsolution@zohomail.in">teamwork.hrsolution@zohomail.in</a>.</p><style jsx>{`.legal{max-width:820px;margin:60px auto;padding:0 20px;font-family:system-ui;line-height:1.7}.legal h1{font-size:40px}`}</style></main>}
